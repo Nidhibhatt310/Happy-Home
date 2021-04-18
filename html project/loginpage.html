@@ -1,0 +1,85 @@
+<html>
+<head>
+<style type="text/css">
+.h1
+{background-color:rgba(128, 166, 190, 1);}
+img.back
+{
+z-index:1;
+position:fixed;
+opacity:0.3;
+}
+div.front{
+width:100%;
+z-index:1;
+position:relative;
+top:0;
+left:0;
+}
+.txt
+{font-size:20px;
+font-family:Sitka Heading}
+</style>
+</head>
+<body>
+<img src="slide3.jpg" class="back" height="100%" width="100%">
+<div class="front">
+<h1 class="h1"style="color:white"align="center">Log In<h1>
+<fieldset>
+<p class="txt"align="center">
+Email address
+<input "type="text"/><br></p>
+<p class="txt"align="center">
+Password
+<input type="password"maxlength="8"/></p>
+<p align="center"style="color:white">
+	<button onclick="myFunction()">Log in
+	</button>
+	<p id="demo"></p>
+	<script>
+	
+	function myFunction(){
+if(confirm("If you are not a registered user you cannot log in"))
+{
+	alert("Have to signup first");
+
+}
+else
+{
+	alert("Re-enter the details and try again");
+
+}document.getElementById("demo").innerHTML;
+}
+</script>
+</p>
+<p class="txt"align="center">Help! Forgot password</p>
+<p class="txt"align="center">If you are new go for sign up.</p>
+<p align="center"style="color:white"><a href="signuppage.html" target="_self" ><input type="submit"value="Sign Up"></a></p>
+</fieldset>
+<p class="txt"align="center">
+<select>
+<option value="selected 1">HELP</option>
+<option value="selected 2">CONTACT US</option>
+<option value="selected 3">FAQ</option>
+<option value="selected 4">CARE</option>
+<option value="selected 5">RETURNS</option>
+<option value="selected 6">GIFT CARDS</option>
+</select><br><br>
+<select>
+<option value="selected 1">COMPANY</option>
+<option value="selected 2">ABOUT US</option>
+<option value="selected 3">HOSPITALITY</option>
+<option value="selected 4">PRESS</option>
+<option value="selected 5">CARRERS</option>
+<option value="selected 6">TRADE</option>
+<option value="selected 7">BLOG</option>
+</select><br><br>
+<select>
+<option value="selected 1">SHOP</option>
+<option value="selected 2">STORES</option>
+<option value="selected 3">THE INSTAGRAM SHOP</option>
+</select><br><br>
+</p>
+</div>
+</body>
+</html>

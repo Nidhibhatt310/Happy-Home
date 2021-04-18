@@ -1,0 +1,111 @@
+<html>
+<head>
+<style type="text/css">
+.h1
+{background-color:rgba(128, 166, 190, 1);}
+.txt
+{font-size:20px;
+font-family:Sitka Heading}
+img.back
+{
+z-index:1;
+position:fixed;
+opacity:0.3;
+}
+div.front{
+width:100%;
+z-index:1;
+position:relative;
+top:0;
+left:0;
+}
+
+form
+{ border:3px solid #f1f1f1;}
+input[type=text],
+input[type=password]{
+	width:20%;
+	height:20%;
+	padding:20px 20px;
+	margin:8px 0;
+	display:inline-block;
+	box-sixing:border-box;
+}
+button
+{
+background-color:#4CAF50;
+color:white;
+padding:14px 20px;
+margin:8px 0;
+border:none;
+cursor:pointer;
+width:100%;
+}
+button:hover{
+opacity:0.8;
+}
+.cancelbtn{
+width:auto;
+padding:10px 18px;
+background-color:#f44336;
+}
+</style>
+
+</head>
+<body>
+<h1 class="h1"style="color:white"align="center">Sign Up<h1>
+
+<body>
+<img src="slide3.jpg" class="back" height="100%" width="100%">
+<div class="front">
+
+<form action="/action_page.php">
+<div class="imgcontainer">
+
+</div>
+<div>
+	<center><p class="txt">
+	First Name
+	<input "type="text"/></p>
+	<p class="txt"align="center">
+	Last Name
+	<input "type="text"/><br></p></center>
+		<p class="txt"align="center">
+	Date of Birth
+	<input "type="text"/><br></p>
+	<p class="txt"align="center">
+	Gender
+	<input "type="text"/><br></p>
+	
+	<p class="txt"align="center">
+	Present Address<br>
+	<textarea name=" "></textarea>
+	
+	<p class="txt"align="center">
+	E-Mail<br>
+	<textarea name=" " rows="2" cols="50"></textarea><br></p>
+	
+	<p class="txt"align="center">
+	Password
+	<input type="password" required size="10"maxlength="12"/></p>
+	<p class="txt"align="center">
+	Re-Confirm Password
+	<input type="password"maxlength="12"/></p>
+	
+<p align="center"style="color:white">
+<input type="submit"value="Submit"></p>
+<script type="text/javascript">
+if(confirm("Do you want to sign up ?"))
+{
+	alert("You have agreed");
+}
+else
+{
+	prompt("Error while signing up ....check you details again"," ");
+	alert("welcome");
+}
+</script>
+</p>
+
+</body>
+</html>

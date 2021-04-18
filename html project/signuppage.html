@@ -1,0 +1,116 @@
+<html>
+<head>
+<style type="text/css">
+	input.ng-invalid
+		{  background-color:lightblue;    }
+	.h1
+		{  background-color:rgba(128, 166, 190, 1);  }
+	.txt
+		{font-size:20px;
+		font-family:Sitka Heading}
+	img.back
+		{      z-index:1;
+		position:fixed;
+		opacity:0.3;       }
+	div.front
+		{     width:100%;
+		z-index:1;
+		position:relative;
+		top:0;
+		left:0;       }
+
+	form
+		{ border:3px solid #f1f1f1;}
+	input[type=text],
+	input[type=password]
+		{     width:20%;
+		padding:12px 20px;
+		margin:8px 0;
+		display:inline-block;
+		box-sixing:border-box;     }
+	button
+		{       background-color:#4CAF50;
+		color:white;
+		padding:14px 20px;
+		margin:8px 0;
+		border:none;
+		cursor:pointer;
+		width:100%;      }
+	button:hover
+		{      opacity:0.8;      }
+	.cancelbtn
+		{       width:auto;
+		padding:10px 18px;
+		background-color:#f44336;     }
+</style>
+               <script type="text/javascript">
+			{
+			if(confirm("Do you want to sign up ?"))
+				{      alert("You have agreed");     }
+			else
+				{      alert("OK.....Thanks for visiting");       }
+			}
+
+		function password_function()
+		{          
+		            if(myRePassword=myPassword)
+			{    alert("You may proceed");   }
+		            else
+			{    alert("Password doesn't match");   }
+		}
+	</script>	
+
+</head>
+	<body>
+	<h1 class="h1"style="color:white"align="center">Sign Up<h1>
+
+	<img src="slide3.jpg" class="back" height="100%" width="100%">
+	<div class="front">
+
+	<form action="/action_page.php"ng-app=" "name="myForm">
+	<div class="imgcontainer">
+	</div>
+
+
+	<p class="txt"align="center">
+					First Name
+		<input type="text"name="myName" ng-model="myText" required/></p>
+	<p class="txt"align="center">
+					Last  Name
+		<input type="text"name="myLName" ng-model="myText" required/></p>
+	
+	<p class="txt"align="center">
+					Birth Date
+		<input type="text"name="myDOB" ng-model="myText" required/></p>
+	
+	<p class="txt"align="center">		Gender : Male
+		<input type="radio"name="myMGender" ng-model="myText" required/>
+					Female		
+		<input type="radio"name="myFGender" ng-model="myText" required/></p>
+	<p class="txt"align="center">
+					 Address &nbsp;&nbsp;
+		
+	<input type="text"name="myEmail" ng-model="myText" wrap="hard" required style="height:80px;"/>
+
+	<p class="txt"align="center">
+					E-Mail &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+		<input type="text"name="myEmail" ng-model="myText" required/><br></p>
+	<p class="txt"align="center">
+					Password &nbsp; &nbsp;&nbsp;
+		
+		<input type="password" required size="10"maxlength="12" onclick="password_function()"
+		name="myPassword" ng-model="myText" required/></p>
+	<p class="txt"align="center">
+					Re-Password
+	
+		<input type="password"maxlength="12"
+		name="myRePassword" ng-model="myText" required/></p>
+
+<p align="center"style="color:white">
+	<a href="file:///C:/Users/Aachal%20panchal/Desktop/Aachal%2016/project/loginpage.html">
+		<input type="submit"value="Submit"onclick="password_function()">
+	</a>
+</p>
+
+</body>
+</html>

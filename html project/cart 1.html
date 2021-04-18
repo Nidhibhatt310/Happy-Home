@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+ background-color:rgba(255,255,255,.7)
+}
+
+* {
+  box-sizing: border-box;
+}
+.topnav	{
+	background-color:rgba(128, 166, 190, 1);
+	overflow:hidden;		}
+.topnav a.active
+{
+background-color:rgba(128, 166, 190, 1);
+color:white;
+}
+.topnav a:hover
+{
+background-color:steelblue;
+color:powderblue;
+}
+.topnav a{
+	float:left;
+	color:white;
+	text-align:center;
+	padding:40px 20px;
+	font-size:18px;
+	font-family:sans-serif;
+	text-decoration:none;	}
+
+
+.col-25 {
+  -ms-flex: 25%; 
+  flex: 25%;
+}
+
+.container {
+  background-color: #f2f2f2;
+  padding: 5px 20px 15px 20px;
+  border: 1px solid lightgrey;
+  border-radius: 3px;
+}
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+
+a {
+  color: #2196F3;
+}
+tab1
+{
+padding-left:5em;
+}
+footer
+{
+display:block;
+background-color:rgba(128, 166, 190, 1);
+overflow:hidden;
+color:white;
+font-size:18px;
+font-family:Fixedsys;
+text-decoration:none;
+}
+ 
+
+hr {
+  border: 1px solid lightgrey;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+  .col-25 {
+    margin-bottom: 20px;
+  }
+}
+
+
+</style>
+</head>
+<body bgcolor="#F0F8FF">
+<div class="topnav">
+<div>
+<a class="active" href="#"><span style="font-size:30px"><strong><i>HAPPY HOME</i></strong></span><tab1></a>
+</div> 
+<a href="living.html">Living<tab1></a>
+<a href="decor.html">Decor<tab1></a>
+<a href="kitchen.html">Kitchen<tab1></a>
+<a href="bedroom.html">Bedroom<tab1></a>
+<a href="about.html">About<tab1></a>
+<a href="homepage.html"><img src="home.png"></a>
+<a href="loginpage.html"> <img src="login1.jpg"></a>
+<a href="cart 1.html"><img src="cart1.jpg"></a>
+</div>
+
+
+<h2>Responsive Checkout Form</h2>
+
+  <div class="col-25">
+    <div class="container">
+      <h4>Cart <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+      <p><a href="wood.html">Wooden chair</a> <span class="price">Rs.500</span></p>
+      <p><a href="#">Glass bottle</a> <span class="price">Rs.200</span></p>
+      <p><a href="#">Shelf</a> <span class="price">Rs.5000</span></p>
+      <p><a href="#">Tea kattle</a> <span class="price">Rs.300</span></p>
+      <hr>
+      <p>Total <span class="price" style="color:black"><b>Rs.6000</b></span></p>
+    </div>
+  </div>
+</div><br><br>
+
+<div class="col-25">
+    <div class="container">
+      <h4>Select Payment mode <span class="price" style="color:black"></span></h4>
+	<p>
+	<input type="radio"/>Credit Card</p>
+	<p>
+	<input type="radio"/>Debit Card</p>
+	<p>
+	<input type="radio"/>Net banking</p>
+	<p>
+	<input type="radio"/>BHIM UPI</p>
+	<p>
+	<input type="radio"/>Pay on Delivery (Cash/Card)</p>
+ 	<button onclick="myFunction()">Done
+	</button>
+	<p id="demo"></p>
+	<script>
+	
+	function myFunction(){
+if(confirm("Your purchase is confirmed.Continue Shopping?"))
+{
+	inputxt=prompt("Enter your contact number for further updates");
+	alert("please verify your contact number  "+inputxt);
+		
+}
+else
+{
+	alert("Thanks for visiting our site");
+
+}document.getElementById("demo").innerHTML;
+}  
+	</script>
+</div>
+  </div>
+</div><br><br>
+
+
+<div>
+<footer>
+<table cellspacing="30" cellpadding="15">
+<tr>
+<td>
+Contact Us:<br>
+1800-000-0000
+<td>You can mail us at:<br>
+<a href="happyhome@gmail.com">happyhome@gmail.com</a>
+<td>
+We Accept:<br>
+<img src="accept.png">
+<td><tab1>
+<td>We are also at:<br>
+<img src="facebook.png">
+<img src="insta.png">
+<img src="twitter.png">
+</tr>
+</table>
+</footer>
+
+
+
+</body>
+</html>

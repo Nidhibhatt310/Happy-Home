@@ -1,0 +1,116 @@
+<html>
+<head>
+<style type="text/css">
+.h1
+{background-color:rgba(128, 166, 190, 1);}
+.txt
+{font-size:20px;
+font-family:Sitka Heading}
+img.back
+{
+z-index:1;
+position:fixed;
+opacity:0.3;
+}
+div.front{
+width:100%;
+z-index:1;
+position:relative;
+top:0;
+left:0;
+}
+
+form
+{ border:3px solid #f1f1f1;}
+.input[type=text]{
+	align-center;
+	}
+input[type=password]{
+	width:50%;
+	height:10px;
+	padding:20px 20px;
+	margin:8px 0;
+	display:inline-block;
+	box-sixing:border-box;
+	padding-left:10px;
+}
+button
+{
+background-color:#4CAF50;
+color:white;
+padding:14px 20px;
+margin:8px 0;
+border:none;
+cursor:pointer;
+width:100%;
+}
+button:hover{
+opacity:0.8;
+}
+.cancelbtn{
+width:auto;
+padding:10px 18px;
+background-color:#f44336;
+}
+</style>
+
+</head>
+<body>
+<h1 class="h1"style="color:white"align="center">Sign Up<h1>
+
+<body>
+<img src="slide3.jpg" class="back" height="100%" width="100%">
+<div class="front">
+
+<form action="/action_page.php">
+<div class="imgcontainer">
+
+</div>
+<div>
+<table align="center"><tr><td>
+	<center><p class="txt">
+	First Name &nbsp;
+	<textarea name=" " rows="1" cols="30"></textarea>
+	</p>
+	<td><p class="txt"align="center">
+	Last Name &nbsp;
+	<textarea name=" " rows="1" cols="30"></textarea></p></td>
+	</tr><br><tr><td>
+	<p class="txt"align="center"><br>
+	Date of Birth &nbsp;
+	<textarea name=" " rows="1" cols="30"></textarea></p>
+	<td><p class="txt"align="center"><br>
+	Gender &nbsp;
+	<textarea name=" " rows="1" cols="30"></textarea><br></p></td>
+	</tr><tr><td>
+	<p class="txt"align="center"><br>
+	Present Address &nbsp;
+	<textarea name=" " rows="1" cols="30"></textarea>
+	<td><p class="txt"align="center"><br>
+	E-Mail &nbsp;
+	<textarea name=" " rows="1" cols="30"></textarea><br></p></td>
+	</tr>
+	<tr><td><p class="txt"align="center"><br>
+	Password &nbsp;
+	<input type="password" required size="2"maxlength="12"/></p>
+	<td><p class="txt"align="center"><br>
+	 Re-Password &nbsp;
+	<input type="password" required size="2"maxlength="12"/></p></td>
+	</tr><tr><td>
+<p align="center"style="color:white">
+<input type="submit"class="inputvalue="Submit"></td></tr></table>
+<script type="text/javascript">
+if(confirm("Do you want to sign up ?"))
+{
+	alert("You have agreed");
+}
+else
+{
+	prompt("Error while signing up ....check you details again"," ");
+	alert("welcome");
+}
+</script>
+</p>
+
+</body>
+</html>
